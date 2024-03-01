@@ -1,0 +1,87 @@
+.pie {
+    grid-area: pie;
+    display: grid;
+    background-color:#699401;
+    grid-template-areas: 'redS  infoCont  mapa polit'
+                        'derecho derecho derecho derecho';
+    grid-template-columns: 20% 20% auto 20%;
+    gap: 5px;
+}
+
+.pie .redes_sociales {
+    grid-area: redS;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    color: whitesmoke;
+    font-size: 90%;
+    text-align: center;
+}
+
+.pie .redes_sociales>div {
+    width: 10%;
+    height: 10%;
+    margin-bottom: 25px;
+}
+
+.pie .redes_sociales .facebook img,
+.pie .redes_sociales .instagram img,
+.pie .redes_sociales .whatsapp img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.pie .enlaces a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.pie .informacion_contacto {
+    grid-area: infoCont;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 90%;
+    text-align: left;
+}
+
+.pie .politicas {
+    grid-area: polit;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    font-size: 90%;
+    padding: 5px;
+}
+
+.pie .politicas a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.pie .mapa_sitio {
+    grid-area: mapa;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+    font-size: 90%;
+    text-align: center;
+}
+
+.pie .mapa_sitio iframe {
+    width: 70%;
+    height: 70%;
+}
+
+.pie .derechos {
+    padding-top: 10px;
+    grid-area: derecho;
+    color: whitesmoke;
+    font-size: 100%;
+    text-align: center;
+}

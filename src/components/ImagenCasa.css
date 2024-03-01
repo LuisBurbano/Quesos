@@ -1,0 +1,43 @@
+.galeria section img {
+    border-radius: 10px;
+    margin: 5px;
+    width: 100px; /* Ancho de las imágenes */
+    height: 100%; /* Altura de las imágenes */
+    object-fit: cover; /* Escalar las imágenes para que se ajusten dentro de su contenedor */
+    opacity: 0.8; /* Opacidad inicial */
+    transition: width 0.5s, opacity 0.5s; /* Agregar transición para suavizar cambios */
+}
+
+.galeria section img:hover {
+    width: 120px; /* Escalar la imagen al 120% al pasar el mouse sobre ella */
+    opacity: 1; /* Aumentar la opacidad al 100% al pasar el mouse sobre ella */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse sobre la imagen */
+}
+.galeria {
+    display: flex;
+    grid-area: galeria;
+    justify-content: center;
+    align-items: center;
+    
+}
+.galeria section {
+    display: flex;
+    width: 100%;
+    height: 430px;
+}
+
+.galeria section img {
+    border-radius: 10px;
+    margin: 5px;
+    width: 0%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+}
+
+@media screen and (max-width: 800px) {
+    .galeria section img:hover {
+        width: 50%; /* Ajustar el tamaño al 50% en dispositivos móviles al pasar el mouse sobre ella */
+    }
+}

@@ -1,0 +1,113 @@
+/* CSS Document */
+
+.cabecera {
+  background-image: url(../assets/img/quesoslogo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: cabecera;
+  display: grid;
+  grid-template-areas:
+    "logo logo opciones opciones"
+    "navbar navbar navbar navbar";
+  grid-template-columns: 20% 20% 30% 30%;
+  width: 100%;
+  
+}
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 200px;
+  height: 180px;
+  margin-left: auto;
+  
+}
+
+.logo img {
+  width: auto;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.opciones button {
+  background: #ffa500;
+  margin-left: auto;
+}
+
+.opciones button:hover {
+  color: #000000;
+  background: #f2f2f2;
+}
+
+.navbar {
+  grid-area: navbar;
+  padding: 8px;
+}
+
+#menu {
+  background: #ffa500;
+}
+
+#menu ul,
+#menu li {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+#menu li {
+  float: left;
+  display: inline;
+  position: relative;
+}
+
+#menu a {
+  display: block;
+  line-height: 45px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#menu a.dropdown-arrow:after {
+  content: "\2B9F";
+  margin-left: 5px;
+}
+
+#menu li a:hover {
+  color: #000000;
+  background: #f2f2f2;
+}
+
+
+#menu ul.sub-menus {
+  height: auto;
+  overflow: hidden;
+  width: 170px;
+  background: #444444;
+  position: absolute;
+  
+  display: none;
+}
+
+#menu ul.sub-menus li {
+  display: block;
+  width: 100%;
+}
+
+#menu ul.sub-menus a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#menu li:hover ul.sub-menus {
+  display: block;
+}
+
+#menu ul.sub-menus a:hover {
+  background: #f2f2f2;
+  color: #444444;
+}
