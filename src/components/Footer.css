@@ -6,6 +6,8 @@
                         'derecho derecho derecho derecho';
     grid-template-columns: 20% 20% auto 20%;
     gap: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .pie .redes_sociales {

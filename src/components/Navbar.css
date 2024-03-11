@@ -12,7 +12,6 @@
     "navbar navbar navbar navbar";
   grid-template-columns: 20% 20% 30% 30%;
   width: 100%;
-  
 }
 .logo {
   grid-area: logo;
@@ -70,13 +69,12 @@
 #menu li {
   float: left;
   display: inline;
-  position: relative;
 }
 
 #menu a {
   display: block;
   line-height: 45px;
-  padding: 0 14px;
+  padding: 14px;
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
