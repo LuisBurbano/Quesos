@@ -3,14 +3,14 @@ import './Producto.css'
 const Producto = (props) => {
     return (
 
-        <div class="item">
+        <div className="item">
             <figure>
                 <img src={props.imagen} alt="producto" />
             </figure>
-            <div class="info-product">
+            <div className="info-product">
                 <h2>{props.titulo}</h2>
-                <p class="price">${props.precio}</p>
-                <button class="btn-add-cart" onClick={props.onClick}>{props.textoBoton}</button>
+                <p className="price">${props.precio}</p>
+                <button className="btn-add-cart" onClick={props.onClick}>{props.textoBoton}</button>
             </div>
         </div>
     );

@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    color: black;
+    
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.register {
+    background-color:#f5f5f5;
+    border-radius: 5px;
+    padding-top: 20px;    
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.login {
+    background-color:#f5f5f5;
+    border-radius: 5px;
+    padding-top: 20px;    
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.elemento {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    color: black;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    font-size: 12px;
+    width: 300px;
+}
+
+label {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    padding: 0 4px;
+    font-weight: 100;
+    color: black;
+    background-color:#f5f5f5;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:not(:placeholder-shown) ~ label,
+input:focus ~ label {
+    top: -8px;
+    font-size: 14px;
+    color: black;
+}
